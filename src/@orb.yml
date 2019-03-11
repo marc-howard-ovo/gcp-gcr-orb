@@ -52,6 +52,7 @@ commands:
     steps:
       - gcp-cli/install
       - gcp-cli/initialize:
+          gcloud-service-key: <<parameters.gcloud-service-key>>
           google-project-id: <<parameters.google-project-id>>
           google-compute-zone: <<parameters.google-compute-zone>>
       - run:
